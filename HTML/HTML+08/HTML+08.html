@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camper-registration-form</title>
+    <style>
+        body{
+            background-color:darkcyan;
+            font-family: 'Roboto',sans-serif;
+        }
+        .registrationAndpayment{
+            width: 450px;
+            height: 100%;
+            margin: auto;
+            border-radius: 3px;
+            background-color: white;
+        }
+        img{
+            float: left;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+        h2{
+            text-align: center;
+
+        }
+        form{
+            width: 400px;
+            height: 100%;
+            margin: 15px;
+        }
+        #cc, #cc2{
+            inline-size: 230px;
+            padding: 5px;
+            margin: 5px;
+        }
+        #cs, #cn, #ed{
+            inline-size: 100%;
+            margin: 5px;
+        }
+        #Check, #CreditCard, #MoneyOrder, #check, #AfricanAmerican, #Asian, #Caucasian, #Other, #Latino, #PacificIslander, #MixedRace, #under, #over, #pay1, #pay2, #pay3{
+            inline-size: 10%;
+            padding: 5px;
+            margin: 5px;
+        }
+        #home, #work, #cell, #home2, #work2, #cell2, #home3, #work3, #cell3, #home4, #work4, #cell4{
+            inline-size: 150px;
+            padding: 5px;
+            margin: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }  
+        button{
+            width: 100%;
+            height: 40px;
+            margin: 10px;
+            overflow-y: none;
+            border-radius: 5px;
+            border: none;
+            background-color:rgb(104, 216, 179);
+            color: white;
+            font-size: 18px;
+        }
+        
+        .one{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 10px;
+        }
+        .STATE select{
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }
+        
+        .tsize input{
+            inline-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registrationAndpayment">
+        <form action="#" method="post">
+        <img src="featherrivercamp.png" alt="Feather River Camp" />
+        <p class="one"><h2>2018 Youth Camp Registration Form</h2>Please Visit<a href=""> www.FeatherRiverCamp.com</a> prior to completing form for information on rates, dates, scholarships and important registration information. To ensure timely registration processing, please print legibly and complete all fields. If you have any questions, give us a call!</p>
+        <div class="registrationMethod">
+            <label for="camperName">Camper Name</label>
+            <input type="text" id="camperName" />
+            <label for="dob">Birthdate</label>
+            <input type="date" id="dob" />
+            <label for="grade">Grade in Sept. '18</label>
+            <input type="text" id="grade" />
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" />
+            <label for="signature">This will be my child's</label>
+            <input type="text" id="signature" >Summer at OFRC Youth Camp.
+            <div class="tsize">
+            <label for="size">T-shirt size(circle)</label></br>
+            <input type="radio" id="ys" value="size">YS</br>
+            <input type="radio" id="ym" value="size">YM</br>
+            <input type="radio" id="yl" value="size">YL</br>
+            <input type="radio" id="as" value="size">AS</br>
+            <input type="radio" id="am" value="size">AM</br>
+            <input type="radio" id="al" value="size">AL</br>
+            <input type="radio" id="axl" value="size">AXL</br>
+            <input type="radio" id="axxl" value="size">AXXL</br>
+            </div><!--tsize-->
+            <label for="school">School</label>
+            <input type="text" id="school" />
+            <label for="address">Stree Address</label>
+            <input type="text" id="address" />
+            <label for="apt">Apt#</label>
+            <input type="text" id="apt" />
+            <label for="city">City</label>
+            <input type="text" id="city" />
+            <div class="STATE">
+            <label for="state">State</label>
+            <select id="state">
+                    <option value="AD">Andhra Pradesh</option>
+                    <option value="AP">Arunachal Pradesh</option>
+                    <option value="As">Assam</option>
+                    <option value="Bi">Bihar</option>
+                    <option value="Ch">Chhattisgarh</option>
+                    <option value="Go">Goa</option>
+                    <option value="Gu">Gujarat</option>
+                    <option value="Ha">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="Jh">Jharkhand</option>
+                    <option value="Ka">Karnataka</option>
+                    <option value="Ke">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="Ma">Maharashtra</option>
+                    <option value="Man">Manipur</option>
+                    <option value="Me">Meghalaya</option>
+                    <option value="Mi">Mizoram</option>
+                    <option value="Na">Nagaland</option>
+                    <option value="Od">Odisha</option>
+                    <option value="Pu">Punjab</option>
+                    <option value="Ra">Rajasthan</option>
+                    <option value="Si">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="Te">Telangana</option>
+                    <option value="Tr">Tripura</option>
+                    <option value="Ut">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+            </select>
+            </div><!--STATE-->
+            
+            <label for="zip">Zip</label>
+            <input type="tel" id="zip" />
+            <label for="contactName">Parents/Guardian Contact Name</label>
+            <input type="text" id="contactName" />
+            
+            <div class="info">
+            <p>Day Phone(Circle):</p>
+            <input type="radio" id="home" value="first">
+            <label for="home">Home</label>
+            <input type="text" id="home" /><br>
+
+            <input type="radio" id="cell" value="second">
+            <label for="cell">Cell</label>
+            <input type="text" id="cell" /><br>
+
+            <input type="radio" id="work" value="third">
+            <label for="work">Work</label>
+            <input type="text" id="work" /><br>
+
+            <p>Evening Phone:</p>
+            <input type="radio" id="home2" value="forth">
+            <label for="home2">Home</label>
+            <input type="text" id="home2" /><br>
+
+            <input type="radio" id="cell2" value="fifth">
+            <label for="cell2">Cell</label>
+            <input type="text" id="cell2" /><br>
+
+            <input type="radio" id="work2" value="sixth">
+            <label for="work2">Work</label>
+            <input type="text" id="work2" /><br>
+            </div><!--info-->            
+            <label for="addcontactName">Additional Parents/Guardian</label>
+            <input type="text" id="addcontactName" />
+            
+            <div class="Addinfo">
+            <p>Day Phone(Circle):</p>
+            <input type="radio" id="home3"  value="seventh"><label for="home3">Home</label>
+            <input type="text" id="home3" /><br>
+
+            <input type="radio" id="cell3" value="eighth">
+            <label for="cell3">Cell</label>
+            <input type="text" id="cell3" /><br>
+
+            <input type="radio" id="work3" value="ninth">
+            <label for="work3">Work</label>
+            <input type="text" id="work3" /><br>
+
+            <p>Evening Phone:</p>
+            <input type="radio" id="home4" value="tenth">
+            <label for="home4">Home</label>
+            <input type="text" id="home4" /><br>
+
+            <input type="radio" id="cell4" value="eleventh">
+            <label for="cell4">Cell</label>
+            <input type="text" id="cell4" /><br>
+
+            <input type="radio" id="work4"  value="twelth">
+            <label for="work4">Work</label>
+            <input type="text" id="work4" /><br>
+            </div><!--Addinfo-->
+
+            <label for="details">Have Parents attended OFRC (please provide details)?</label>
+            <input type="text" id="details" />
+            <label for="occupation">Parent Occupation(s)</label>
+            <input type="text" id="occupation" />
+            <label for="Email">Contact Email(s)</label>
+            <input type="email" id="Email" />
+            <label for="specify">How did you first hear about OFRC? (specificity is appreciated!)</label>
+            <input type="text" id="specify" />
+            
+            <div class="additionalInfo">
+            <p>Other than the parent/guardian names listed above, my child can be released to (name and phone number):</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <label for="relation">Relationship to Camper</label>
+            <input type="text" id="relation" />
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(    )         " />
+            <label for="2name">Name</label>
+            <input type="text" id="2name" />
+            <label for="2relation">Relationship to Camper</label>
+            <input type="text" id="2relation" />
+            <label for="2phone">Phone Number</label>
+            <input type="tel" id="2phone" placeholder="(    )         " />
+            </div><!--additionalInfo-->
+
+            <div class="infoAnddemo">
+            <div class="Info">
+            <h2>Additional Information and Requests</h2>
+            <label for="request">Tent/Cabin Mate Request:</label>
+            <input type="text" id="request" />
+            <p>We will attempt to honor all requests. For more information on our tent/cabin mate request policy, see our website.</p>
+            <label for="other">Other Special Needs or Requests:</label>
+            <input type="text" id="other" />
+            <p>Camper health information will be collected on a separate form that will be provided after receiving your completed registration and deposit.</p>
+            </div><!--Info-->
+
+            <div class="Demo">
+                <h2>CAMPER DEMOGRAPHICS</h2>
+                <p>Many foundations require camper demographics to receive grant funding. In addition, providing camper demographic information may reduce the cost of leasing land from the Forest Service.Participation in the following is optional, but very appreciated!</p>
+
+                <div class="ethinic">
+                <p>Ethinicity</p>
+                <input type="radio" id="AfricanAmerican" value="quality">
+                <label for="AfricanAmerican">African American</label><br>
+                
+                <input type="radio" id="Asian" value="quality">
+                <label for="Asian">Asian</label><br>
+                
+                <input type="radio" id="Caucasian" value="quality">
+                <label for="Caucasian">Caucasian</label><br>
+                
+                <input type="radio" id="Latino" value="quality">
+                <label for="Latino">Latino</label><br>
+                
+                <input type="radio" id="PacificIslander" value="quality">
+                <label for="PacificIslander">Pacific Islander</label><br>
+                
+                <input type="radio" id="MixedRace" value="quality">
+                <label for="MixedRace">Mixed Race (check all)</label><br>
+                
+                <input type="radio" id="Other" value="quality">
+                <label for="Other">Other</label>
+                <input type="text" id="Other" />
+                </div><!--ethinic-->
+
+                <div class="income">
+                    <p>Annual Household Income</p>
+                    <input type="radio" id="under" value="source">
+                    <label for="under">under $25,000</label><br>
+                    
+                    <input type="radio" id="pay1" value="source">
+                    <label for="pay1">$25,000 - $50,000</label><br>
+                    
+                    <input type="radio" id="pay2" value="source">
+                    <label for="pay2">$50,000 - $75,000</label><br>
+
+                    <input type="radio" id="pay3" value="quality"><label for="pay3">$75,000 - $100,000</label><br>
+
+                    <input type="radio" id="over" value="source"><label for="over">over $100,000</label><br>
+                </div><!--income-->
+            </div><!--Demo-->
+            </div><!--infoAnddemo-->
+
+            <p>I verify that I am the parent/guardian of the above named child; I hereby consent that he/she may attend OFRC Youth Camp. I agree to meet
+            OFRC deadlines regarding payment and completing/returning all forms for my child.</p>
+            <label for="NAME">Parent/Guardian Name (Print)</label>
+            <input type="text" id="NAME" />
+            <label for="sign">Parent/Guardian Signature</label>
+            <input type="file" id="sign" />
+            <label for="date">Date</label>
+            <input type="date" id="date" />
+        </div><!--registrationMethod-->
+
+        <div class="paymentMethod">
+            <h2>PAYMENT INFORMATION</h2>
+            <p>A minimum 25% of total cost deposit is required upon time of registration to guarantee your child's spot.<b>Paying by check helps Oakland Feather River Camp by significantly reducing charge fees.</b><u>Please make checks payable to Camps in Common.</u>If paying your deposit by credit card, your remaining balance will be charged on June 1st, 2018. Please see website for change & cancellation policies.</p>
+            <label for="deposite">Deposit Amount Enclosed/To Charge:</label>
+            <input type="tel" id="deposite" placeholder="$           " />
+            <label for="tax">Optional Tax-Deductible Donation to Camps in Common:</label>
+            <input type="tel" id="tax" placeholder="$            " />
+            <label for="DATE">Date</label>
+            <input type="date" id="DATE" />
+            <p>Payment Method (circle):</p>
+            
+            <input type="radio" id="Check" value="payMethod">
+            <label for="Check">Check</label><br>
+            <label for="cc">CC#:</label>
+            <input type="text" id="cc" /><br>
+            
+            
+            <input type="radio" id="CreditCard" value="payMethod">
+            <label for="CreditCard">Credit Card</label>
+            <br>
+            <label for="ed">Exp Date:</label>
+            <input type="date" id="ed" /><br>
+            <label for="cn">Cardholder's Name:</label>
+            <input type="text" id="cn" /><br>
+            <label for="cs">Cardholder's Signature:</label>
+            <input type="file" id="cs" /><br>
+            
+            <input type="radio" id="MoneyOrder" value="payMethod">
+            <label for="MoneyOrder">Money Order</label><br>
+            <label for="cc2">CC#:</label>
+            <input type="text" id="cc2" />
+            
+        </div><!--paymentMethod-->
+
+        <div class="next">
+                <h2>WHAT TO DO NEXT</h2>
+                <p><b>Please send completed registration form and payment to:</b>Camps in Common, PO Box 11061, Oakland, CA 94611(Up to May 15) or Oakland Feather River Camp, PO Box 3229, Quincy, CA 95971 (after May 15)<div><b>Email:</b><a href="maito:"Info@FeatherRiverCamp.com"> Info@FeatherRiverCamp.com</a></div>
+                <div><b> High Quality Faxes can be sent to:</b><a> 510-601-1595</a></div>Once payment has been received and processed, you will receive an email with your confirmation letter, receipt and required forms.</p>
+                <label for="check"></label>
+                <input type="checkbox" id="check">Please check here if you'd like your confirmation letter mailed instead of emailed.
+                <button type="submit">Submit Data</button>
+        </div><!--next-->
+        </form>
+    </div><!--registrationAndpayment-->
+</body>
+</html>
