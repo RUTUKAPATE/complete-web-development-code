@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form{
+            border: 1px solid black;
+            max-width: 600px;
+            padding: 20px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        input, select{
+            width: 100%;
+            height: 45px;
+            font-size: 1.5em;
+            background-color: lightslategray;
+            color: white;
+            margin-bottom: 15px;
+        }
+        #checks input{
+            width: 15%;
+        }
+        #checks{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            background-color: orange;
+            color:white;
+            font-size: 1.75em;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" /><br/>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" /><br/>
+        <label for="useremail">Email</label>
+        <input type="email" id="useremail" /><br/>
+        <label for="contactNumber">Phone Number</label>
+        <input type="phone" id="contactNumber" placeholder="##-##########"/><br/>
+        <label for="department">Department</label>
+        <select id="department">
+            <option value="etc">ETC</option><br/>
+            <option value="ai">AI</option><br/>
+            <option value="IT">Information Technology</option><br/>
+            <option value="CE">CE</option><br/>
+        </select>
+        <div id="checks">
+        <label for="interests">Interests</label>
+        <br/><input type="checkbox" id="interests" value="sports">Sports
+        <br/><input type="checkbox" id="interests" value="music">Music
+        <br/><input type="checkbox" id="interests" value="dance">Dance
+        </br><label for="section">Section</label>
+        <br/><input type="radio" id="A" value="class">A
+        <br/><input type="radio" id="B" value="class">B
+        <br/><input type="radio" id="C" value="class">C
+        <br/><input type="radio" id="D" value="class">D
+        </div>
+        <br/><label for="doa">Date of Admission</label>
+        </br><input type="date" id="doa">
+        <button type="submit">Submit Data</button>
+    </form>
+</body>
+</html>

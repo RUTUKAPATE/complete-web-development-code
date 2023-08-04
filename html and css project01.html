@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        #container {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #billingInfo, #shippingAndPayment {
+            float: left;
+            width: 30%;
+        }
+
+        #billingInfo input, select{
+            width: 100%;
+            display: block;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+
+        #orderReview img{
+            width: 125px;
+            height: 88px;
+            float: left;
+            padding-right: 10px;
+        }
+
+        #shippingAndPayment, #orderReview, #billingInfo {
+            width: 30%;
+            border-right: 1px solid gray;
+            padding: 15px;
+            height: 700px;
+
+        }
+
+        #orderReview, #billingInfo{
+            float: left;
+        }
+
+
+    label {
+        font-size: .9em;
+        font-weight: bold;
+       }
+
+    h1  {
+        color: gray;
+        letter-spacing: .10em;
+       }
+
+    
+
+       .stepno {
+        color: orange;
+        font-style: italic;
+        font-size: 1.5em;
+       }
+
+       .shipRate{
+        float: right;
+        font-style: italic;
+       }
+
+       h2 {
+        text-transform:uppercase;
+        font-size: 1em;
+       }
+
+       #ccNum, #eDate, #cvNum {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 15px;
+       }
+       
+       #paymentMethod img {
+        float: right;
+        width: 125px;
+       }
+
+       button{
+        background-color: orange;
+        color: white;
+        width: 100%;
+        height: 40px;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.15em;
+       }
+
+       #pricing {
+        background-color: lightgray;
+        padding: 3px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+        font-size: .8em;
+    }
+
+       .price{
+        float: right;
+       }
+
+       #grandTotal{
+        border-top: 2px solid black;
+        padding-top: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="billingInfo">
+    <h1>Express Checkout</h1>
+        <h2><span class="stepno">1. </span>Billing Address</h2>
+        <form action="#" method="post">
+        
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" />
+        
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" />
+        
+        <label for="usermail">Email Address</label>
+        <input type="email" id="usermail" />
+        
+        <label for="telephone">Telephone</label>
+        <input type="tel" id="telephone" />
+
+        <label for="address">Billing Address</label>
+        <input type="text" id="address" />
+        <input type="text" id="address" />
+        
+        <label for="place">City</label>
+        <input type="text" id="place" />
+        
+        <label for="state">State</label>
+        <select id="state">
+            <option value="AD">Andhra Pradesh</option>
+            <option value="AP">Arunachal Pradesh</option>
+            <option value="As">Assam</option>
+            <option value="Bi">Bihar</option>
+            <option value="Ch">Chhattisgarh</option>
+            <option value="Go">Goa</option>
+            <option value="Gu">Gujarat</option>
+            <option value="Ha">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="Jh">Jharkhand</option>
+            <option value="Ka">Karnataka</option>
+            <option value="Ke">Kerala</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="Ma">Maharashtra</option>
+            <option value="Man">Manipur</option>
+            <option value="Me">Meghalaya</option>
+            <option value="Mi">Mizoram</option>
+            <option value="Na">Nagaland</option>
+            <option value="Od">Odisha</option>
+            <option value="Pu">Punjab</option>
+            <option value="Ra">Rajasthan</option>
+            <option value="Si">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="Te">Telangana</option>
+            <option value="Tr">Tripura</option>
+            <option value="Ut">Uttarakhand</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="WB">West Bengal</option>
+        </select>
+        
+        <label for="code">Zipcode</label>
+        <input type="text" id="code" />
+    </div>
+    
+    <div id="shippingAndPayment">
+    <div id="shippingMethod">    
+        <h2><span class="stepno">2. </span>Shipping</h2>    
+        <input type="radio" id="faster" name="shipping">Faster(1-3 Days with tracking)<span class="shipRate">₹10.00</span>
+        
+        <p><input type="radio" id="Fast" name="shipping">Fast(3-7 Days with tracking)<span class="shipRate">Free</span></p>
+    </div><!--shippingMethod-->
+
+    <div id="paymentMethod">  
+        <h2><span class="stepno">3. </span>Payment Method</h2>      
+        <p>
+        <input type="radio" id="cc" name="payment">Credit Card
+        <img src="cc_logos.png" alt="Credit Card Logos" />
+        </p>
+        
+        <label for="ccNum">Credit Card Number</label>
+        <input type="text" id="ccNum" /></br>
+        
+        <label for="eDate">Expiration Date</label>
+        <input type="date" id="eDate"></br>
+        
+        <label for="cvNum">Card Verification Number</label>
+        <input type="number" id="cvNum"></br>
+        
+        <p><input type="radio" id="PayPal" value="method">Paypal
+        <img src="paypal.png" alt="PayPal Logo" /></p>
+    </div><!--PaymentMethods-->
+    </div><!--shippingAndPayment-->
+    <div id="orderReview">
+        <h2><span class="stepno">4.</span>Review Your Order</h2>
+        <img src="speaker1.jpg" alt="Speaker Image" />
+        <p>
+            <strong>Amazon High Speaker</strong></br>
+            M1 Max Model</br>
+            ₹2,000.00</br>
+            Quntity:1
+        </p>
+        
+        <div id="pricing">
+            <p>SubTotal <span class="price">₹2,000.00</span></br>
+            </br>ShippingTotal <span class="price">₹0.00</span></br>
+            <p id="grandTotal">Grand Total <span class="price">₹2,000.00</span></p>
+        </div>
+        <p><strong>Place order and pay now:</strong></br>
+        <button>Place Order</button></p>
+    </div><!--order Review-->
+        </form>
+    </div><!--Container-->
+    </body>
+</html>
