@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container{
     height: auto;
     width: auto;
@@ -11,119 +12,321 @@
     overflow-x: none;
     overflow-y: none;
 }
+
+@media screen and (min-device-width: 100px) and (max-device-width:3500px) {
+    .container{
+    width: auto;
+    }
+}
+
 .navContainer{
-    width: 70%;
+    width: auto;
     margin: auto;
-    /*background-color: rgb(160, 90, 224);*/
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     min-height: 50px;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
+
+@media screen and (min-device-width: 100px) and (max-device-width:800px) {
+    .navContainer{
+    width: auto;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width:3500px) {
+    .navContainer{
+    width: 70%;
+    }
+}
+
 nav{
-    width: 100%;
+    width: auto;
     overflow-x: none;
 }
+
 #navList{
-    width: 100%;
-    padding: 15px;
+    width: auto;
+    margin: auto;
     list-style: none;
-    font-size: 1.5rem;
+    overflow-x: none;
     display: flex;
+    text-align: center;
     justify-content: space-between;
-    align-items: center;
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    #navList{
+      gap:40px;
+      padding: 5px;
+    }
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    #navList{
+      gap:60px;
+      padding: 20px;
+    }
 }
 #navLogo{
-    font-size: 1.5rem;
+    padding: 10px;
     color: white;
+
 }
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    #navLogo{
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+#navLogo{
+           font-size: 40px;
+        }
+}
+
 a{
     text-decoration: none;
     color: azure;
 }
+
 #navItems{
-    gap: 20px;
+    gap: 5px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+#navItems{
+    font-size: 14px;
+    gap: 10px;
+}
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    #navItems{
+        font-size: 40px;
+        gap: 50px;
+    }
+}
+
 .heroText{
-    width: 70%;
+    width: auto;
     margin: auto;
-    /*background-color: rgb(160, 90, 224);*/
     background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
-    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    font-size: 3rem;
     align-items: center;
 }
+
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    .heroText{
+      font-size: 1.5rem;
+      padding: 20px;
+    }
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    .heroText{
+      width: 70%;
+      font-size: 7rem;
+      padding: 50px;
+    }
+}
+
 .contentBox{
-    width: 70%;
-    height: auto;
+    width: auto;
     margin: auto;
-    /*border: 1px solid black;*/
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     display: flex;
+    size-adjust: auto;
+    position: relative;
     flex-direction: column;
-    justify-content: space-between;   
+    justify-content: space-between;
+    overflow-x: none;   
 }
-.contentBox h4{
-    font-size: 75px;
-    color: rgb(27, 12, 0);
-    text-align: center;
-    padding: 10px;
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+.contentBox{
+    width: auto;
+}
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+.contentBox{
+    width: 70%;
+}
+}
 
-}
 .part1, .part2, .third, .part4{
+    width: auto;
+    overflow-x: none;
     display: flex;
     border: 1px solid grey;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    .part1{
+        flex-direction: column-reverse;
+    } 
+}
+@media screen and (min-device-width:900px) and(max-device-width:3500px) {
+    .part1{
+        width: auto;
+        display: flex;
+        overflow: none;
+    }
+}
+@media screen and (min-device-width: 100px) and (max-device-width: 800px) {
+    .part2{
+        justify-content: space-around;
+        padding: 20px;
+    } 
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+.part2{
+    justify-content: space-around;
+    padding: 70px;
+}
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width:800px) {
+    .third{
+        flex-direction: column;
+    } 
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width:3500px) {
+    .third{
+        flex-direction: row;
+    } 
+}
+
 .part1 h3, .third h3, .part4 h3{
-    font-size: 75px;
     color: rgb(27, 12, 0);
-    /*text-align: center;*/
     padding: 10px;
 }
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    .part1 h3, .third h3, .part4 h3{
+        font-size: 40px;
+    }
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    .part1 h3, .third h3, .part4 h3{
+        font-size: 150px;
+    }
+}
+
 .part1 section, .third section, .part4 section{
-    text-align: left;
     margin: 40px;
     padding: 20px;
 }
-.part1 p, .third p, .part4 label,input,a{
-    font-size: 20px;
-    /*text-align: center;*/
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+    .part1 section, .third section, .part4 section{
+        margin: 10px;
+        padding: 10px;
+    }  
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    .part1 section, .third section, .part4 section{
+        margin: 0px;
+        padding: 30px;
+    }  
+}
+
+.part1 p, .third p, .part4 label{
     padding: 10px;
 }
+@media screen and (min-device-width: 100px) and (max-device-width:800px){
+.part1 p, .third p, .part4 label{
+        font-size: 20px;
+        padding: 10px;
+    } 
+}
+@media screen and (min-device-width: 900px) and (max-device-width:3500px){
+    .part1 p, .third p, .part4 label{
+            font-size: 70px;
+            padding: 10px;
+        }
+}
+    
 .part1 button, .part4 button{
-    font-size: 20px;
-    padding: 10px;
     background-color: rgb(161, 5, 154);
     color: white;
     border-style: none;
     margin: 10px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px) {
+    .part1 button, .part4 button{
+        font-size: 20px;
+        padding: 10px;
+    }    
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px) {
+    .part1 button, .part4 button{
+        font-size: 70px;
+        padding: 10px;
+    }    
+}
+
 .part2 h3{
     color: rgb(36, 4, 87);
-    font-size: 50px;
-    padding: 40px;
+    text-align: center;
     padding-bottom: 0px;
+    padding: 10px;
+    margin: auto;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px) {
+    .part2 h3{
+        font-size: 20px;
+        padding-bottom: 0px;
+    } 
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px) {
+    .part2 h3{
+        font-size: 150px;
+        padding-bottom: 0px;
+    } 
+}
+
 .part2 p{
-    font-size: 20px;
-    /*text-align: center;*/
-    padding: 40px;
+    text-align: center;
     padding-top: 0px;
+    margin: auto;
+    padding: 10px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px) {
+    .part2 p{
+        font-size: 10px;
+        padding-top: 0px;
+    } 
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px) {
+    .part2 p{
+        font-size: 70px;
+        padding-top: 0px;
+    } 
+}
+
 .third img{
-    width: 600px;
     height: auto;
 }
+.contentBox h4{
+    text-align: center;
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+.contentBox h4{
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+}
+}
+@media screen and (min-device-width:800px) and (max-device-width:3500px){
+    .contentBox h4{
+        font-size: 150px;
+        padding: 40px;
+        margin: 40px;
+    }
+    }
+
 .recipeList{
     display: flex;
     padding: 10px;
@@ -131,103 +334,266 @@ a{
     align-items: center;
     position: relative;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .recipeList{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .recipeList{
+        gap: 50px;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
 .recipeList img{
-    height: 250px;
-    width: 300px;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .recipeList img{
+        height: 290px;
+        width: 350px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .recipeList img{
+        height: 800px;
+        width: 800px;
+    }
+}
+
 .recipeList h5{
-    font-size: 25px;
     color: rgb(68, 7, 22);
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .recipeList h5{
+        font-size: 30px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .recipeList h5{
+        font-size: 70px;
+    }
+}
+
 .recipeList p{
-    font-size: 15px;
     color: azure;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     justify-content: space-between;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .recipeList p{
+        font-size: 20px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .recipeList p{
+        font-size: 50px;
+    }
+}
+
 .items{
-    width: 70%;
-    height: 100rem;
+    width: auto;
+    height: auto;
     overflow-y: none;
     overflow-x: none;
     margin: auto;
-    border: 1px solid black;
     background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .items{
+        width: auto;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .items{
+        width: 70%;
+    }
+}
+
 .items h2{
     text-align: center;
-    font-size: 4rem;
+    font-size: 10rem;
+    padding: 40px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .items h2{
+        font-size: 3rem;
+        padding: 20px;
+    }    
+}
+
 .imgInfo{
     padding: 20px;
     display: flex;
     justify-content: space-around;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .imgInfo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .imgInfo img{
-    height: 400px;
-    width: 450px;
     border-radius: 30px;
     padding: 20px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .imgInfo img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .imgInfo img{
+        height: 800px;
+        width: 1000px;
+    }
+}
+    
 .recipe-icons{
     display: flex;
+    text-align: center;
+    font-size: 60px;
     justify-content: space-around;
-    font-size: medium;
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .recipe-icons{
+        padding: 10px;
+        font-size: 20px;
+        gap: 10px;
+    }
 }
 .recipe-icons article{
     border-style:groove;
 }
+
 .totalBox{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+.totalBox{
+    flex-direction: column;
+}
 }
 .firstBox, .secondBox{
-    width: 50%;
+    width: auto;
     padding: 20px;
 }
-.firstBox h4{
-    font-size: 2rem;
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+    .firstBox, .secondBox{
+        width: 50%;
+        padding: 50px;
+    }
+}
+.firstBox h4, .secondBox h4{
+    font-size: 7rem;
     color: rgb(82, 59, 2);
 }
-.firstBox ul{
-    padding: 10px;
-    font-size: large;
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .firstBox h4, .secondBox h4{
+        font-size: 2.5rem;    
 }
-.secondBox h4{
-    font-size: 2rem;
-    color: rgb(82, 59, 2);
 }
+.firstBox ul, .secondBox ul{
+    padding: 20px;
+    font-size: 50px;
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+.firstBox ul, .secondBox ul{
+    font-size: 25px;
+}
+}
+
 .secondBox header{
     display: flex;
-    font-size: larger;
-    padding-bottom: 5px;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+.secondBox header{
+    font-size: 20px;
+}
 }
 .secondBox header p{
     border-style: groove;
     font-weight: bolder;
+    text-align: center;
+    padding: 10px;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .secondBox header p{
+        padding: 5px;
+    }
+}
+    
 .secondBox header div{
-    padding: 5px;
+    padding: 20px;
     font-weight: bold;
     color: rgb(0, 24, 24);
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .secondBox header div{
+        padding: 10px;
+    }
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px){
+    .singleInfo p{
+        font-size: 20px;
+    }  
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
+.singleInfo p{
+    font-size: 50px;
+}
 }
 .part3{
     margin: auto;
     width: 70%;
 }
+
 .footerBox{
-    width: 70%;
+    width: auto;
     margin: auto;
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     text-align: center;
+    min-height: auto;
 }
+@media screen and (min-device-width:100px) and (max-device-width:800px) {
+    .footerBox{
+        width: auto;
+        padding: 10px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px) {
+    .footerBox{
+        width: 70%;
+        padding: 20px;
+    }
+}
+
 .footerBox p{
     color: azure;
-    font-size: 1rem;
+}
+@media screen and (min-device-width:100px) and (max-device-width:800px) {
+    .footerBox p{
+        font-size: 10px;
+    }
+}
+@media screen and (min-device-width:900px) and (max-device-width:3500px) {
+    .footerBox p{
+        font-size: 40px;
+    }
 }
 .footerBox a:hover{
     color: aqua;
