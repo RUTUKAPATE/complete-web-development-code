@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (min-device-width: 800px) and (max-device-width:3500px) {
+@media screen and (min-device-width: 900px) and (max-device-width:3500px) {
     .navContainer{
     width: 70%;
     }
@@ -319,7 +319,7 @@ a{
     margin: 20px;
 }
 }
-@media screen and (min-device-width:800px) and (max-device-width:3500px){
+@media screen and (min-device-width:900px) and (max-device-width:3500px){
     .contentBox h4{
         font-size: 150px;
         padding: 40px;
